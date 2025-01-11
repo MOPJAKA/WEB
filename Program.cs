@@ -16,6 +16,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+builder.Services.AddConnections(options =>
+{
+    
+});
+
 app.UseAuthorization();
 
 app.MapControllers();
